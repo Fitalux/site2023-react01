@@ -1,0 +1,79 @@
+//버튼
+@mixin button($bg_color, $textcolor) {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: $bg_color;
+    color: $textcolor;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    
+    &:hover {
+        background-color: darken($bg_color, 10%);
+    }
+}
+
+//가운데 정렬
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//중앙(가로세로) 정렬
+@mixin position-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//양쪽 정렬
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+//한 줄 Effect
+@mixin line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+//두 줄 이상 Effect
+@mixin line($num) {
+    display: -webkit-box;
+    -webkit-line-clamp: $num;
+    -webkit-box-orient: vertical;
+}
+
+//border-radius
+@mixin B-radius($radius) {
+    border-radius: ($radius);
+}
+
+//icon
+@mixin icon($bg_color, $icon-image) {
+    position: relative;
+    padding-top: 70px;
+
+    &::before {
+        content: '';
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: $bg_color;
+        background-image: $icon-image;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &:hover:before {
+        background-color: darken($bg_color, 10%)
+    }
+}

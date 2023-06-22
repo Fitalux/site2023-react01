@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'; 
+import Header from './components/layout/Header';
+import Home from './components/pages/Home';
+import CardPage from './components/pages/CardPage';
+import MoviePage from './components/pages/MoviePage';
+import YoutubePage from './components/pages/YoutubePage';
+import UnsplashPage from './components/pages/UnsplashPage';
+import Footer from './components/layout/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Header attr={["header__wrap", "Neo5", "bg-blue"]}/>
+      <Routes>
+        <Route path="/" element={<Home />} />;
+        <Route path="/card" element={<CardPage />} />;
+        <Route path="/movie" element={<MoviePage />} />;
+        <Route path="/youtube" element={<YoutubePage />} />;
+        <Route path="/unsplash" element={<UnsplashPage />} />;
+      </Routes>
+      <Footer attr={["footer__wrap", "Neo5", "bg-blue"]}/>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

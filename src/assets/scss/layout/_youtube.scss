@@ -1,0 +1,51 @@
+.youtube__wrap {
+    overflow: hidden;
+}
+.youtube__inner {
+    height: 570px;
+
+    h3 {
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+
+    p {
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 60px;
+    }
+
+    a {
+        @include B-radius(15px);
+    }
+
+    .youtube__item {
+        @include flex-between;
+        margin-top: 70px;
+        position: absolute;
+        > div {
+            width: 400px;
+            margin-right: 20px;
+
+            img {
+                width: 100%;
+                @include B-radius(25px);
+            }
+        }
+    }
+}
+
+.youtube__cont {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-family: 'NanumSquareNeo';
+    
+        li {
+            width: 24%;
+            position: relative;
+            margin-bottom: 2%;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+//.card__wrap{}
+.cards__inner{
+
+    .cards__btn {
+        margin-bottom: 30px;
+        
+        ul {
+            display: flex;
+        }
+    }
+    .cards__cont {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        .card {
+            width: 32.333%;
+
+            .card__body {
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                margin-bottom: 30px;
+
+                h4 {
+                    font-size: 20px;
+                    color: var(--color_body)
+                }
+
+                span {
+                    font-size: 16px;
+                    color: #666;
+                }
+            }
+
+            img {
+                width: 100%;
+                @include B-radius(15px);
+            }
+        }
+
+    }
+}
