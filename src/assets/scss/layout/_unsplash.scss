@@ -48,6 +48,34 @@
     }
 }
 
+
+//unsplash Tag
+.unsplash__tag {
+    // display: none
+    div {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+
+        button {
+            background-color: #fff;
+            border:1px solid #4857EC;
+            padding: 10px 20px;
+            margin: 0 10px;
+            color: #4857EC;
+            cursor: pointer;
+            font-family: 'NanumSquareNeo';
+            transition: all 0.5s;
+
+            &:hover {
+                background-color: #4857EC;
+                color: #fff;
+            }
+        }
+    }
+}
+
 //unsplash Search
 .unsplash__search {
     margin-bottom: 50px;

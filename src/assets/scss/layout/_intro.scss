@@ -53,3 +53,46 @@
         }
     }
 }
+
+.intro__cont {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    .intro__box {
+        display: flex;
+        width: 50%;
+        margin-right: 10px;
+    
+        img {
+           width: 300px;
+           height: 250px;
+        }
+    
+        .box__text {
+            margin-left: 30px;
+            
+            h2 {
+                font-size: 40px;
+            }
+    
+            span {
+                font-weight: bold;
+                font-size: 24px;
+            }
+    
+            p {
+                line-height: 1.5;
+                font-size: 20px;
+            }
+            a {
+                display: block;
+                text-align: center;
+                margin-top: 10px;
+                padding: 10px 20px;
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    }
+}

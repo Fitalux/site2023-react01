@@ -73,6 +73,38 @@
                 border-radius: 50%;
                 font-size: 12px;
             }
+
+            .not_poster{
+                width: 100%;
+                height: 88%;
+            }
+        }
+    }
+}
+
+.movie__tag {
+    // display: none
+    div {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+
+        button {
+            background-color: #fff;
+            border:1px solid #101010;
+            padding: 10px 20px;
+            margin: 0 10px;
+            color: #101010;
+            cursor: pointer;
+            font-family: 'NanumSquareNeo';
+
+            transition: all 0.5s;
+
+            &:hover {
+                background-color: #101010;
+                color: #fff;
+            }
         }
     }
 }
@@ -90,11 +122,11 @@
         min-width: 300px;
         margin-right: 10px;
         font-family: 'NanumSquareNeo';
-        border: 2px solid #00c183;
+        border: 2px solid #101010;
     }
     
     button {
-        @include button (#00c183, #fff);
+        @include button (#101010, #fff);
         @include B-radius (15px);
         font-family: 'NanumSquareNeo';
     }
@@ -103,3 +135,5 @@
 .movie__slider {
     margin-bottom: 40px;
 }
+
+

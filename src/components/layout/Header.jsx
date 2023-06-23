@@ -1,25 +1,40 @@
 import React from 'react';
-import{ Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const Header = (props) => {
+const Header = props => {
   return (
-    <header id="header" className={`${props.attr[0]} ${props.attr[1]} ${props.attr[2]}`} role="heading" aria-level="1">
-    <div className="header__inner container">
+    <header
+      id="header"
+      className={`${props.attr[0]} ${props.attr[1]} ${props.attr[2]}`}
+      role="heading"
+      aria-level="1"
+    >
+      <div className="header__inner container">
         <h1 className="header__logo">
-            <Link to="/">Web Standard Site - Project2023</Link>
+          <Link to="/">Web Standard Site - Project2023</Link>
         </h1>
         <nav className="header__nav" role="navigation">
-            <ul>
-                <li><Link to="/image">이미지</Link></li>
-                <li><Link to="/card">카드 이미지</Link></li>
-                <li><Link to="/youtube">유튜브</Link></li>
-                <li><Link to="/unsplash">Unsplash</Link></li>
-                <li><Link to="/movie">영화</Link></li>
-            </ul>
+          <ul>
+            <li>
+              <Link to="/intro">Recommed Genre</Link>
+            </li>
+            <li>
+              <Link to="/card">Recommed Music</Link>
+            </li>
+            <li>
+              <Link to="/youtube">유튜브</Link>
+            </li>
+            <li>
+              <Link to="/unsplash">Unsplash</Link>
+            </li>
+            <li>
+              <Link to="/movie">영화</Link>
+            </li>
+          </ul>
         </nav>
-    </div>
-</header>
-  )
-}
+      </div>
+    </header>
+  );
+};
 
 export default Header;

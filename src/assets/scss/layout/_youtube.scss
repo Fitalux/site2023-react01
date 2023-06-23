@@ -49,3 +49,53 @@
         }
     }
 }
+
+.youtube__tag {
+    // display: none
+    div {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+
+        button {
+            background-color: #fff;
+            border:1px solid #00c183;
+            padding: 10px 20px;
+            margin: 0 10px;
+            color: #00c183;
+            cursor: pointer;
+            font-family: 'NanumSquareNeo';
+            transition: all 0.5s;
+
+            &:hover {
+                background-color: #00c183;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+//youtube Search
+.youtube__search {
+    margin-bottom: 50px;
+    text-align: center;
+    
+    input {
+        border: 1px solid #E8ECF2;
+        font-size: 16px;
+        padding: 10px 20px;
+        @include B-radius(15px);
+        min-width: 300px;
+        margin-right: 10px;
+        font-family: 'NanumSquareNeo';
+        border: 1px solid #00c183
+    }
+    
+    button {
+        @include button (#00c183, #fff);
+        @include B-radius (15px);
+        font-family: 'NanumSquareNeo';
+    }
+}
