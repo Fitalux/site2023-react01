@@ -11,15 +11,15 @@ const Header = props => {
     >
       <div className="header__inner container">
         <h1 className="header__logo">
-          <Link to="/">Web Standard Site - Project2023</Link>
+          <Link to="/">REACT Site - Site Project2023</Link>
         </h1>
         <nav className="header__nav" role="navigation">
           <ul>
             <li>
-              <Link to="/intro">Recommed Genre</Link>
+              <Link to="/intro">JAZZ</Link>
             </li>
             <li>
-              <Link to="/card">Recommed Music</Link>
+              <Link to="/card">POP SONG</Link>
             </li>
             <li>
               <Link to="/youtube">유튜브</Link>
